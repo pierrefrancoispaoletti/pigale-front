@@ -2,7 +2,7 @@
 
 export const $SERVER = "https://pigale.herokuapp.com";
 
-export const GOOGLE_API_KEY = "AIzaSyBlV19qRfHj05YOzkkavxXTS2HGx2D54Ps";
+export const GOOGLE_API_KEY = "AIzaSyBk9HYYrfPI-3YKfFoLjsOiKBJjhTqfN2g";
 
 export const primary ="#8B0D32"
 

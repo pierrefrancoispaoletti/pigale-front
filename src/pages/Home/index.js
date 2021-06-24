@@ -150,7 +150,7 @@ const Home = ({
       )}
       {event && Object.keys(event).length === 0 && (
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <img height="300px" src="./assets/images/logo.png" alt="" />
+          <img height="180px" width="320px" src="./assets/images/logo.png" alt="logo pigale" />
         </div>
       )}
     </Container>

@@ -28,7 +28,7 @@ const Copyright = ({
         </Header>
       </div>
       <div className="footer__icons">
-        <a target="_blank" href="https://www.facebook.com/lepetitclosajaccio" rel="noreferrer">
+        <a target="_blank" href="https://www.facebook.com/" rel="noreferrer">
           <FontAwesomeIcon
             style={{
               color: "#3B5998",
@@ -40,7 +40,7 @@ const Copyright = ({
             pull="left"
           />
         </a>
-        <a target="_blank" href="https://www.instagram.com/lepetitclosajaccio" rel="noreferrer">
+        <a target="_blank" href="https://www.instagram.com/" rel="noreferrer">
           <FontAwesomeIcon
             style={{ color: "#3F729B", borderRadius: "100%" }}
             size="3x"
@@ -56,7 +56,7 @@ const Copyright = ({
         </Header>
       </div>
       <div className="footer__icons">
-        <a href={`mailto:lepetitclosajaccio@gmail.com`}>
+        <a href={`mailto:`}>
           <FontAwesomeIcon
             style={{
               "--fa-primary-color": "black",
@@ -85,8 +85,8 @@ const Copyright = ({
       <Divider />
       <div className="footer__copyright" style={{color: ternary}}>
         {"Copyright © "}
-        <a style={{ color: ternary, textDecoration: "underline" }} href="https://lepetitclos-ajaccio.fr">
-          <span>Le Petit Clos &nbsp;</span>
+        <a style={{ color: ternary, textDecoration: "underline" }} href="">
+          <span>Le Pigale&nbsp;</span>
         </a>
         <span>{` ${new Date().getFullYear()}. `}</span>
       </div>
