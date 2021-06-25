@@ -4,7 +4,12 @@ import { Translator, Translate } from "react-auto-translate";
 import React from "react";
 import { Header } from "semantic-ui-react";
 import "./productitem.css";
-import { GOOGLE_API_KEY, primary, secondary, ternary } from "../../../_const/_const";
+import {
+  GOOGLE_API_KEY,
+  primary,
+  secondary,
+  ternary,
+} from "../../../_const/_const";
 
 const ProductItem = ({
   product,
@@ -42,7 +47,11 @@ const ProductItem = ({
   return (
     <div
       className="productitem"
-      style={{ display: visible ? "" : user ? "" : "none", background: primary, border: `1px solid ${secondary}` }}
+      style={{
+        display: visible ? "" : user ? "" : "none",
+        background: primary,
+        border: `1px solid ${secondary}`,
+      }}
     >
       <div className="productitem-header">
         <Header
@@ -71,7 +80,7 @@ const ProductItem = ({
           )}
           {choice ? (
             <FontAwesomeIcon
-                className="bosschoice alvp__icon"
+              className="bosschoice alvp__icon"
               icon={faHeartCircle}
               style={{
                 "--fa-primary-color": primary,
@@ -83,20 +92,35 @@ const ProductItem = ({
             ""
           )}
         </Header>
-        <span className="price" style={{background: secondary, color: ternary}}>
-          {price.toFixed(2)}
-          <small>€</small>
-        </span>
+        {price !== 0 && (
+          <span
+            className="price"
+            style={{ background: secondary, color: ternary }}
+          >
+            {price.toFixed(2)}
+            <small>€</small>
+          </span>
+        )}
       </div>
-      {region && <div className="region" style={{background: secondary, color: ternary}} >{region}</div>}
+      {region && (
+        <div
+          className="region"
+          style={{ background: secondary, color: ternary }}
+        >
+          {region}
+        </div>
+      )}
       {description && (
         <Translator
           cacheProvider={cacheProvider}
           from="fr"
-          to={userLang.substr(0,2)}
+          to={userLang.substr(0, 2)}
           googleApiKey={GOOGLE_API_KEY}
         >
-          <p className="description" style={{background: secondary, color: ternary}}>
+          <p
+            className="description"
+            style={{ background: secondary, color: ternary }}
+          >
             <Translate>{description}</Translate>
           </p>
         </Translator>

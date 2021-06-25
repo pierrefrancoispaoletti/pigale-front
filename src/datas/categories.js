@@ -1,12 +1,11 @@
 import {
-  faBeer,
+  faBurrito,
   faCheeseburger,
-  faGlassChampagne,
+  faChild,
   faGlassCitrus,
-  faGlassWhiskeyRocks,
-  faHatChef,
-  faPepperHot,
-  faWineBottle,
+  faSalad,
+  faStroopwafel,
+  faUtensils,
 } from "@fortawesome/pro-duotone-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { primary, secondary } from "../_const/_const";
@@ -28,22 +27,33 @@ const categories = [
     subCategories: [
       {
         name: "Salades",
-        slug: "tapas",
+        slug: "salades",
         icon: (
           <FontAwesomeIcon
             size="3x"
-            icon={faHatChef}
+            icon={faSalad}
             style={{ "--fa-secondary-color": "red" }}
           />
         ),
       },
       {
-        name: "Épicerie",
-        slug: "epicerie",
+        name: "Omelettes",
+        slug: "omelettes",
         icon: (
           <FontAwesomeIcon
             size="3x"
-            icon={faPepperHot}
+            icon={faBurrito}
+            style={{ "--fa-secondary-color": "red" }}
+          />
+        ),
+      },
+      {
+        name: "Le Chaud",
+        slug: "chaud",
+        icon: (
+          <FontAwesomeIcon
+            size="3x"
+            icon={faUtensils}
             style={{ "--fa-secondary-color": "red" }}
           />
         ),
@@ -51,121 +61,12 @@ const categories = [
     ],
   },
   {
-    name: "Vins",
-    slug: "vins",
-    icon: (
-      <FontAwesomeIcon
-        icon={faWineBottle}
-        size="4x"
-        style={{
-          "--fa-primary-color": primary,
-          "--fa-secondary-color": secondary,
-        }}
-      />
-    ),
-    subCategories: [
-      {
-        name: "Vins Rouges",
-        slug: "rouges",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faWineBottle}
-            style={{ "--fa-primary-color": "darkred" }}
-          />
-        ),
-      },
-      {
-        name: "Vins Rosés",
-        slug: "roses",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faWineBottle}
-            style={{ "--fa-primary-color": "#fec5d9" }}
-          />
-        ),
-      },
-      {
-        name: "Vins Blancs",
-        slug: "blancs",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faWineBottle}
-            style={{ "--fa-primary-color": "#f1f285" }}
-          />
-        ),
-      },
-    ],
-  },
-  {
-    name: "Champagnes",
-    slug: "champagnes",
+    name: "Menu-Enfant",
+    slug: "menuenfant",
     icon: (
       <FontAwesomeIcon
         size="4x"
-        icon={faGlassChampagne}
-        style={{
-          "--fa-primary-color": primary,
-          "--fa-secondary-color": secondary,
-        }}
-      />
-    ),
-    subCategories: [
-      {
-        name: "Brut",
-        slug: "champagnes bruts",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faGlassChampagne}
-            style={{ "--fa-primary-color": "#f1f285" }}
-          />
-        ),
-      },
-      {
-        name: "Rosé",
-        slug: "champagnes roses",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faGlassChampagne}
-            style={{ "--fa-primary-color": "#fec5d9" }}
-          />
-        ),
-      },
-      {
-        name: "Blanc de Blancs",
-        slug: "champagnes blanc de blancs",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faGlassChampagne}
-            style={{ "--fa-primary-color": "white" }}
-          />
-        ),
-      },
-      {
-        name: "Millésimés",
-        slug: "champagnes millésimés",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faGlassChampagne}
-            style={{ "--fa-primary-color": "gold" }}
-          />
-        ),
-      },
-    ],
-  },
-  {
-    name: "Bières",
-    slug: "bieres",
-    icon: (
-      <FontAwesomeIcon
-        size="4x"
-        icon={faBeer}
+        icon={faChild}
         style={{
           "--fa-primary-color": primary,
           "--fa-secondary-color": secondary,
@@ -174,46 +75,22 @@ const categories = [
     ),
   },
   {
-    name: "Alcools",
-    slug: "alcools",
+    name: "Desserts",
+    slug: "desserts",
     icon: (
       <FontAwesomeIcon
         size="4x"
-        icon={faGlassWhiskeyRocks}
+        icon={faStroopwafel}
         style={{
           "--fa-primary-color": primary,
           "--fa-secondary-color": secondary,
         }}
       />
     ),
-    subCategories: [
-      {
-        name: "Premiums",
-        slug: "premiums",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faGlassWhiskeyRocks}
-            style={{ "--fa-primary-color": "#f1f285" }}
-          />
-        ),
-      },
-      {
-        name: "Classiques",
-        slug: "classiques",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faGlassWhiskeyRocks}
-            style={{ "--fa-primary-color": "#f1f285" }}
-          />
-        ),
-      },
-    ],
   },
   {
-    name: "Softs",
-    slug: "softs",
+    name: "Boissons",
+    slug: "Boissons",
     icon: (
       <FontAwesomeIcon
         size="4x"

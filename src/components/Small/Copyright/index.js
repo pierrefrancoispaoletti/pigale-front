@@ -7,13 +7,12 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Divider, Header } from "semantic-ui-react";
-import { ternary } from "../../../_const/_const";
+import { email, facebook, insta, tel, ternary, url } from "../../../_const/_const";
 
 import "./copyright.css";
 const Copyright = ({
   facebookUrl,
   instagramUrl,
-  email,
   phoneNumber,
   backgroundColor,
   productBackgroundColor,
@@ -23,12 +22,16 @@ const Copyright = ({
   return (
     <div className="footer">
       <div>
-        <Header as="h3" style={{color: ternary}}>
+        <Header as="h3" style={{ color: ternary }}>
           Retrouvez nous sur :{" "}
         </Header>
       </div>
       <div className="footer__icons">
-        <a target="_blank" href="https://www.facebook.com/" rel="noreferrer">
+        <a
+          target="_blank"
+          href={`https://www.facebook.com/${facebook}`}
+          rel="noreferrer"
+        >
           <FontAwesomeIcon
             style={{
               color: "#3B5998",
@@ -40,7 +43,7 @@ const Copyright = ({
             pull="left"
           />
         </a>
-        <a target="_blank" href="https://www.instagram.com/" rel="noreferrer">
+        <a target="_blank" href={`https://www.instagram.com/${insta} `}rel="noreferrer">
           <FontAwesomeIcon
             style={{ color: "#3F729B", borderRadius: "100%" }}
             size="3x"
@@ -51,12 +54,12 @@ const Copyright = ({
       </div>
       <Divider />
       <div>
-        <Header as="h3" style={{color: ternary}}>
+        <Header as="h3" style={{ color: ternary }}>
           Contactez nous !{" "}
         </Header>
       </div>
       <div className="footer__icons">
-        <a href={`mailto:`}>
+        <a href={`mailto:${email}`}>
           <FontAwesomeIcon
             style={{
               "--fa-primary-color": "black",
@@ -68,7 +71,7 @@ const Copyright = ({
             pull="left"
           />
         </a>
-        <a href={`tel:0788423413`}>
+        <a href={`tel:${tel}`}>
           <FontAwesomeIcon
             style={{
               "--fa-primary-color": "firebrick",
@@ -83,9 +86,9 @@ const Copyright = ({
         </a>
       </div>
       <Divider />
-      <div className="footer__copyright" style={{color: ternary}}>
+      <div className="footer__copyright" style={{ color: ternary }}>
         {"Copyright © "}
-        <a style={{ color: ternary, textDecoration: "underline" }} href="">
+        <a style={{ color: ternary, textDecoration: "underline" }} href={`${url}`}>
           <span>Le Pigale&nbsp;</span>
         </a>
         <span>{` ${new Date().getFullYear()}. `}</span>

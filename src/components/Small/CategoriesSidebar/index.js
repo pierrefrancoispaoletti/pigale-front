@@ -30,7 +30,7 @@ const CategoriesSidebar = ({
       setActiveMenu("premiums");
     }
     if (selectedCategory.slug === "cuisine") {
-      setActiveMenu("tapas");
+      setActiveMenu("salades");
     }
     if (selectedCategory.slug === "champagnes") {
       setActiveMenu("champagnes bruts");

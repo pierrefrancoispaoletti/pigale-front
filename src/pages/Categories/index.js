@@ -99,7 +99,6 @@ const Categories = ({
       setOpenLoginModal(true);
     }
   };
-
   const handleChangeChoice = (product) => {
     let { image, ...newProduct } = product;
     newProduct.choice = !product.choice;
@@ -195,7 +194,7 @@ const Categories = ({
       <Divider hidden />
       <div className="products">
         {filteredProducts
-          ?.sort((a,b) => b.choice - a.choice).sort((a, b) => a.price - b.price)
+          ?.sort((a, b) =>  category.categorie !== "Boissons" ? b.price - a.price : a.price - b.price).sort((a,b) => b.choice - a.choice)
           .map((p) => (
             <>
               {user && (
